@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <div>
+      <p>Make: <%= @car.make %></p>
+      <p>Model: <%= @car.model %></p>
+      <p>Year: <%= @car.year %></p>
+      <p>Color: <%= @car.color %></p>
+      <p>MSRP: $<%= @car.msrp %></p>
+      <p>Used: <%= @car.used %></p>
+    </div>
+    <div>
+      <%= link_to 'Delete', car_path(@car.id), method: :delete %>
+      <%= link_to 'Back', cars_path %>
+    </div>
+  </div>
+</div>
